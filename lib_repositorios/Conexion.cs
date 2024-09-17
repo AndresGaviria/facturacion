@@ -52,7 +52,7 @@ namespace lib_repositorios
             this.Set<T>().Remove(entidad);
         }
 
-        public virtual void Desatachar<T>(T entidad) where T : class, new()
+        public virtual void Separadar<T>(T entidad) where T : class, new()
         {
             this.Entry(entidad).State = EntityState.Detached;
         }

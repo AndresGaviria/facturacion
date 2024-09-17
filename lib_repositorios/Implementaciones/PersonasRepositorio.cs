@@ -32,7 +32,7 @@ namespace lib_repositorios.Implementaciones
         {
             conexion!.Guardar(entidad);
             conexion!.GuardarCambios();
-            conexion!.Desatachar(entidad);
+            conexion!.Separadar(entidad);
             return entidad;
         }
 
@@ -40,7 +40,7 @@ namespace lib_repositorios.Implementaciones
         {
             conexion!.Modificar(entidad);
             conexion!.GuardarCambios();
-            conexion!.Desatachar(entidad);
+            conexion!.Separadar(entidad);
             return entidad;
         }
 
@@ -48,7 +48,7 @@ namespace lib_repositorios.Implementaciones
         {
             conexion!.Borrar(entidad);
             conexion!.GuardarCambios();
-            conexion!.Desatachar(entidad);
+            conexion!.Separadar(entidad);
             return entidad;
         }
 
